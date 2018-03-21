@@ -1,0 +1,10 @@
+package pack;
+
+public class TestLembda {
+
+	public static void main(String[] args) {
+		Add a1=(a,b)->a+b;
+		System.out.println(a1.getsum(10, 11));
+	}
+
+}

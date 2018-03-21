@@ -1,0 +1,12 @@
+package com.springmvc.first.controller;
+
+public class employee {
+	public static void main(String[] args) {
+		String name;
+		int empid;
+		String designation;
+		double salary;
+		
+	
+	}
+}

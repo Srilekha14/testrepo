@@ -1,0 +1,29 @@
+package com.springmvc.hibernate.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.spring.form.employee.bean.EmployeeBean;
+@Controller
+public class EmployeeController {
+	@RequestMapping(value = "/index", method = RequestMethod.GET)
+	public ModelAndView welcome() {
+		return new ModelAndView("index");
+	}
+
+	@RequestMapping("/employeeform")
+	public ModelAndView showform() {
+		return new ModelAndView("employeeform", "command", new EmployeeBean());
+	}
+
+	@RequestMapping(value = "/saveEmployee", method = RequestMethod.POST)
+	public ModelAndView save(@ModelAttribute("employeebean") EmployeeBean employeebean) {
+		System.out.println(employeebean.getName() + " " + employeebean.getSalary() + " " + employeebean.getDesignation());
+		
+		return new ModelAndView("success");
+	}
+
+}
