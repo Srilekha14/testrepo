@@ -13,7 +13,8 @@
 	<servlet>
 		<servlet-name>springform</servlet-name>
 		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
-	</servlet>
+	</servlet>	
+	
 	<servlet-mapping>
 		<servlet-name>springform</servlet-name>
 		<url-pattern>*.html</url-pattern>
