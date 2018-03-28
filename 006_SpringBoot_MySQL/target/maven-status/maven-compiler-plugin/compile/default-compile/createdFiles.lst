@@ -1,0 +1,4 @@
+com\springboot\watertank\entity\UseWater.class
+com\springboot\watertank\main\SpringMainAppEntry.class
+com\springboot\watertank\repository\WaterRepository.class
+com\springboot\watertank\controller\WaterController.class
